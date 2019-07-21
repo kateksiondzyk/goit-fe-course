@@ -8,21 +8,38 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 900px;
     margin: 0 auto;
 }
 
+.page-nav {
+    padding-top: 76px;
+    padding-bottom: 100px;
+}
+
 .site-navigation {
-    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 900px;
+    margin: 0;
     padding: 0;
     font-size: 14px;
     list-style: none;
-    font-family: "Playfair Display" Georgia;
 }
 
 .site-navigation li {
     display: inline-block;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 108px;
 }
 
 .site-navigation a {
@@ -30,6 +47,7 @@ html {
     font-weight: 700;
     text-decoration: none;
     line-height: 16px;
+    font-family: "PlayfairDisplay", "Georgia", "serif";
 }
 
 .site-navigation a:hover,
@@ -47,7 +65,10 @@ html {
 .features-list-item {
     display: inline-block;
     width: 420px;
+    height: 476px;
     margin-right: 60px;
+    margin-bottom: 140px;
+    padding: 0;
     font-size: 14px;
 }
 
@@ -56,12 +77,19 @@ html {
 }
 
 .features-list-item h2 {
-    color: darkgray;
+    color: rgb(100, 99, 99);
+    margin-top: 26px;
+    margin-bottom: 38px;
     line-height: 36px;
     font-size: 30px;
+    font-family: "PlayfairDisplay", "Georgia", "serif";
 }
 
 .features-list-item p {
+    margin-top: 30px;
     font-size: 14px;
+    font-family: "PlayfairDisplay", "Georgia", "serif";
+    color: grey;
+
 }
 
