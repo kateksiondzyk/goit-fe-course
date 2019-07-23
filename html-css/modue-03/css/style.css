@@ -19,6 +19,10 @@ img {
     margin: 0 auto;
 }
 
+main {
+    padding-bottom: 70px;
+}
+
 .page-nav {
     padding-top: 76px;
     padding-bottom: 100px;
@@ -67,7 +71,7 @@ img {
     width: 420px;
     height: 476px;
     margin-right: 60px;
-    margin-bottom: 140px;
+    margin-bottom: 132px;
     margin-top: 0;
     padding: 0;
     font-size: 14px;
@@ -109,4 +113,5 @@ img {
     font: 20px "PlayfairDisplay", "serif";
     color: rgb(98, 98, 98);
 }
+
 
