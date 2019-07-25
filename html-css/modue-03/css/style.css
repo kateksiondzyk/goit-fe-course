@@ -29,12 +29,11 @@ main {
 }
 
 .site-navigation {
-    display: inline-block;
+    display: block;
     text-align: center;
-    width: 900px;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 0;
     list-style: none;
 }
 
@@ -47,10 +46,12 @@ main {
 }
 
 .site-navigation a {
+    display: block;
     text-decoration: none;
     line-height: 16px;
     font-weight: 500;
-    font: 14px "PlayfairDisplay", "serif";
+    font-size: 14px;
+    font-family: "PlayfairDisplay", "serif";
     color: rgb(98, 98, 98);
 }
 
@@ -71,7 +72,7 @@ main {
     width: 420px;
     height: 476px;
     margin-right: 60px;
-    margin-bottom: 132px;
+    margin-bottom: 136px;
     margin-top: 0;
     padding: 0;
     font-size: 14px;
@@ -85,18 +86,31 @@ main {
     margin-bottom: 56px;
 }
 
+.picture {
+    margin-bottom: 30px;
+}
+
 .features-list-item h2 {
-    margin-top: 26px;
-    margin-bottom: 38px;
+    margin: 0;
+    margin-bottom: 32px;
     font: 30px "PlayfairDisplay", "serif";
     font-weight: 500;
-    color: rgb(98,98,98);
+    color: rgb(98, 98, 98);
 }
 
 .features-list-item p {
-    margin-top: 30px;
     font-size: 14px "PlayfairDisplay", "serif";
     color: rgb(98, 98, 98);
+}
+
+.subpara {
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 26px;
+}
+
+.para {
+    margin: 0;
 }
 
 .button-container {
@@ -114,4 +128,6 @@ main {
     color: rgb(98, 98, 98);
 }
 
-
+.load-button:hover {
+    color: blue;
+}
