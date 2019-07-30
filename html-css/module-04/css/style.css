@@ -227,6 +227,15 @@ header {
     color: rgb(81, 81, 81);
 }
 
+.news-list-item h3::after {
+    display: block;
+    content: "";
+    margin-top: 12px;
+    width: 136px;
+    height: 4px;
+    background-color: rgb(26, 188, 156);
+}
+
 .news-list-item p {
     font-size: 14px;
     font-family: "OpenSans", "Cambria", "serif";
