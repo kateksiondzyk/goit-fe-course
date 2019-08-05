@@ -29,9 +29,15 @@
     </header>
     <main>
         <div class="slider">
-               <button class="slider-ctrl slider-ctrl-prev"></button>
-               <button class="slider-ctrl slider-ctrl-next"></button>
-        </div>
+            <div class="slider-overlay">
+                <div class="slider-overlay-text">
+                    <p class="slider-overlay-title">Affordable Paris Tours</p>
+                    <p class="slider-overlay-descr">City Tours / Tour Tickets / Tour Guides</p>
+                </div>
+            </div>
+                <button class="slider-ctrl slider-ctrl-prev">&lsaquo;</button>
+                <button class="slider-ctrl slider-ctrl-next">&rsaquo;</button>
+            </div>
         <section class="section_2">
             <h2>New collection</h2>
             <ul class="features-list container clearfix">
@@ -42,7 +48,26 @@
                         <p class="price">$26</p>
                     </div>
                 </li>
-                <li class="features-list-item">
+                <li class="features-list-item card">
+                    <div class="card-overlay">
+                        <ul class="btn-list clearfix">
+                            <li class="clearfix">
+                                <a href="#" class="purchase-btn heart"></a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="purchase-btn arrows"></a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="purchase-btn clock"></a>
+                            </li>
+                            <li class="clearfix">
+                                <a href="#" class="add-to-cart-btn">
+                                    <span class="basket"></span>
+                                    <span class="btn-descr-pic"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <img class="features-pic" src="./img/pic2.jpg" alt="Woman Shirt" width="254" height="282">
                     <div class="figure clearfix">
                         <p class="name">Woman Shirt</p>
@@ -51,7 +76,7 @@
                 </li>
                 <li class="features-list-item">
                     <img class="features-pic" src="./img/pic3.jpg" alt="Yellow Tshirt" width="254" height="282">
-                  <div class="figure clearfix">
+                    <div class="figure clearfix">
                         <p class="name">Yellow Tshirt</p>
                         <p class="price">$21</p>
                     </div>
@@ -67,8 +92,10 @@
         </section>
     </main>
     <footer class="footer-info">
-        <a href="#" class="footer-link">All Rights Reserved &copy; Dokan | Designed</a>
-        <a href="#" class="footer-link">ThemenGraph</a>
+        <div class="footer-block">
+            <a href="#" class="footer-link">All Rights Reserved &copy; Dokan | Designed</a>
+            <a href="#" class="footer-link">ThemenGraph</a>
+        </div>
     </footer>
 </body>
 
