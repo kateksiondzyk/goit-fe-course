@@ -19,8 +19,10 @@ img {
 }
 
 .container {
-    width: 1200px;
+    width: 1250px;
     margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .page-nav {
@@ -46,6 +48,7 @@ img {
     text-transform: uppercase;
     font-weight: 600;
     color: rgb(182, 234, 225);
+    transition: color 200ms linear;
 }
 
 .site-navigation a:hover,
@@ -82,11 +85,46 @@ img {
     flex: 0 0 382px;
     padding-left: 82px;
     margin-bottom: 92px;
-    text-align: center;
 }
 
 .services-list-item:nth-child(n+4) {
     margin-bottom: 0px;
+}
+
+.services-list-item:before {
+    position: absolute;
+    top:0;
+    left: 16px; 
+    display: block;
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-alarm::before {
+    background-image: url(../img/icons/alarm.png);
+}
+
+.icon-line_graph::before {
+    background-image: url(../img/icons/line_graph.png);
+}
+
+.icon-computer::before {
+    background-image: url(../img/icons/computer.png);
+}
+
+.icon-book::before {
+    background-image: url(../img/icons/book.png);
+}
+
+.icon-home::before {
+    background-image: url(../img/icons/home.png);
+}
+
+.icon-image::before {
+    background-image: url(../img/icons/image.png);
 }
 
 h4 {
@@ -96,17 +134,6 @@ h4 {
     text-transform: uppercase;
     color: black;
     text-align: left;
-}
-
-h4:before {
-    position: absolute;
-    top:0;
-    left: 16px; 
-    display: inline-block;
-    content: "";
-    width: 50px;
-    height: 45px;
-    background-color: blueviolet;
 }
 
 .services-list-item-descr {
@@ -171,18 +198,19 @@ h3::after {
 .team-list {
     display: flex;
     flex: 0 0 380px;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .team-list-item {
+    width: 380px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 .team-pic {
     width: 380px;
     height: 470px;
-    margin: 0;
     margin-bottom: 28px;
 }
 
@@ -197,17 +225,82 @@ h3::after {
 
 .team-pic-position {
     margin: 0;
-    font-family: "Roboto LightItalic", "Cambria", "sans-serif";
+    font-family: "Roboto Light", "Cambria", "sans-serif";
     font-size: 15px;
     line-height: 24px;
     font-style: oblique;
     color: rgb(153, 153, 153);
 }
 
+.card {
+    position: relative;
+    background-color: rgb(155, 214, 206);
+}
+
+.card-overlay {
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    transition: transform 200ms linear;
+}
+
+.card-overlay:hover {
+    background-image: linear-gradient(to top, rgba(241, 210, 138, 0.7), rgba(241, 145, 139, 0.7));
+    transform: translate(-10px, -10px);
+}
+
+
+.btn-list {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 224px;
+    height: 58px;
+}
+
+.btn-list a {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.socials-btn {
+    display: none;
+    width: 56px;
+    height: 58px;
+    background-color: rgb(252, 227, 138);
+    transition: background-color 200ms linear;
+}
+
+.card-overlay:hover .socials-btn {
+    display: block;
+}
+
+.socials-btn:hover {
+    background-color: rgb(149, 225, 211);
+}
+
+.facebook {
+    background-image: url(../img/socials/facebook.png);
+}
+
+.twitter {
+    background-image: url(../img/socials/twitter.png);
+}
+
+.pinterest {
+    background-image: url(../img/socials/pinterest.png);
+}
+
+.instagram {
+    background-image: url(../img/socials/instagram.png);
+}
+
 .footer-block {
     display: flex;
     align-items: center;
-    height: 64px;
+    min-height: 64px;
     justify-content: space-between;
 }
 
@@ -220,4 +313,38 @@ h3::after {
 .footer-block span:hover,
 .footer-block span:focus {
     color: rgb(243, 129, 129);
+}
+
+[placeholder] {
+    font-family: "Roboto Light", "Cambria", "sans-serif";
+    font-style: oblique;
+    font-size: 15px;
+    line-height: 24px;
+    color:rgb(153, 153, 153);
+    
+}
+
+[value] {
+    font-family: "Roboto Light", "Cambria", "sans-serif";
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 230px;
+    height: 40px;
+}
+
+.btn {
+    margin: 0;
+    border: none;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(149, 225, 211);
 }
