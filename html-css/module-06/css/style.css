@@ -19,10 +19,8 @@ img {
 }
 
 .container {
-    width: 1250px;
+    width: 1200px;
     margin: 0 auto;
-    padding-left: 25px;
-    padding-right: 25px;
 }
 
 .page-nav {
@@ -60,7 +58,7 @@ img {
     display: none;
     content: "";
     width: 50px;
-    height: 4px;;
+    height: 4px;
     margin-top: 10px;
     background-color: rgb(243, 129, 129);
 }
@@ -93,8 +91,8 @@ img {
 
 .services-list-item:before {
     position: absolute;
-    top:0;
-    left: 16px; 
+    top: 0;
+    left: 16px;
     display: block;
     content: "";
     width: 38px;
@@ -212,6 +210,7 @@ h3::after {
     width: 380px;
     height: 470px;
     margin-bottom: 28px;
+    transition: transform 200ms linear;
 }
 
 .team-pic-name {
@@ -238,17 +237,25 @@ h3::after {
 }
 
 .card-overlay {
+    opacity: 0;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 380px;
     height: 470px;
-    transition: transform 200ms linear;
+    transition: opacity 0.2s linear, transform 0.2s linear;
+    background-image: linear-gradient(to top, rgba(241, 210, 138, 0.7), rgba(241, 145, 139, 0.7));
+    z-index: 1;
 }
 
-.card-overlay:hover {
-    background-image: linear-gradient(to top, rgba(241, 210, 138, 0.7), rgba(241, 145, 139, 0.7));
+.card:hover .team-pic {
     transform: translate(-10px, -10px);
 }
 
+.card:hover .card-overlay {
+    transform: translate(-10px, -10px);
+    opacity: 1;
+}
 
 .btn-list {
     display: flex;
@@ -320,8 +327,7 @@ h3::after {
     font-style: oblique;
     font-size: 15px;
     line-height: 24px;
-    color:rgb(153, 153, 153);
-    
+    color: rgb(153, 153, 153);
 }
 
 [value] {
