@@ -38,6 +38,7 @@ img {
     display: flex;
     justify-content: space-between;
     width: 490px;
+    min-height: 30px;
 }
 
 .site-navigation a {
