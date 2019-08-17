@@ -1,0 +1,97 @@
+.container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: #FFC0CB;
+}
+
+
+.ball {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    /* background-image: url(./img/red_ball.png); */
+    background-color: #DC143C;
+    border: 1px solid white;
+    border-radius: 80px 80px 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ball:hover {
+    animation-name: follow_me;
+    animation-duration: 20s;
+    animation-timing-function: ease;
+}
+
+.win {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #800000;
+    animation-name: banner;
+    opacity: 0;
+}
+
+@keyframes banner {
+
+    0% {
+        opacity: 0;
+    }
+
+    93% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ball:hover+.win {
+    animation-name: banner;
+    animation-duration: 20s;
+}
+
+@keyframes follow_me {
+
+    0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    20% {
+        top: 70px;
+        left: 70px;
+    }
+
+    40% {
+        top: 500px;
+        left: 300px;
+        transform: scale(1.7);
+    }
+
+    45% {
+        top: 500px;
+        left: 300px;
+    }
+
+    90% {
+        top: 250px;
+        left: 700px;
+    }
+
+    100% {
+        top: 250px;
+        left: 700px;
+    }
+
+}
