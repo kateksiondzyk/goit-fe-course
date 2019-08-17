@@ -11,8 +11,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     /* background-image: url(./img/red_ball.png); */
     background-color: #DC143C;
     border: 1px solid white;
@@ -58,6 +58,8 @@
 .ball:hover+.win {
     animation-name: banner;
     animation-duration: 20s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
 }
 
 @keyframes follow_me {
@@ -68,18 +70,18 @@
         transform: translate(-50%, -50%);
     }
 
-    20% {
+    30% {
         top: 70px;
         left: 70px;
     }
 
-    40% {
+    50% {
         top: 500px;
         left: 300px;
         transform: scale(1.7);
     }
 
-    45% {
+    55% {
         top: 500px;
         left: 300px;
     }
