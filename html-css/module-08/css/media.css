@@ -1,7 +1,7 @@
-@media (min-width: 321px) and (max-width: 768px) {
+@media (max-width:768px) {
 
     .container {
-        max-width: 768px;
+        max-width: 748px;
     }
 
     .header {
@@ -49,11 +49,13 @@
     .header-info__btn {
         width: 226px;
         height: 40px;
-        padding: 14px 22px;
+        padding: 12px 22px;
     }
 
     .partners {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
         padding-top: 72px;
     }
@@ -67,8 +69,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 522px;
-        height: 496px;
-        margin: 0 auto;
+        margin-bottom: 32px;
     }
 
     .partners_list--item {
@@ -85,10 +86,6 @@
     }
 
     .partners__btn {
-        position: absolute;
-        top: 658px;
-        left: 50%;
-        transform: translateX(-50%);
         width: 194px;
         height: 40px;
         padding: 0;
@@ -96,14 +93,13 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 960px) {
 
     .container {
-        max-width: 1439px;
+        max-width: 940px;
     }
 
     .header {
-        position: relative;
         min-height: 700px;
         background-color: grey;
         background-image: url(../img/Background_descktop.png);
@@ -113,10 +109,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 930px;
-        min-height: 112px;
-        padding-top: 44px;
+        width: 940px;
+        min-height: 222px;
         margin: 0 auto;
+        padding: 44px 48px 138px;
     }
 
     .header-nav__btns {
@@ -128,13 +124,10 @@
     }
 
     .header-info {
-        position: absolute;
-        top: 222px;
-        left: 50%;
-        transform: translateX(-50%);
         display: block;
         width: 500px;
         min-height: 245px;
+        margin: 0 auto;
     }
 
     .header-info__title {
@@ -150,11 +143,13 @@
     .header-info__btn {
         width: 226px;
         height: 40px;
-        padding: 14px 22px;
+        padding: 12px 22px;
     }
 
     .partners {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0;
         padding-top: 68px;
     }
@@ -165,30 +160,28 @@
 
     .partners__list {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        width: 930px;
-        height: 236px;
-        margin: 0 auto;
+        width: 940px;
+        margin-bottom: 36px;
     }
 
     .partners_list--item {
         width: 220px;
+        height: 250px;
         margin: 0;
-        margin-bottom: 56px;
         padding: 0;
-        padding-left: 10px;
-        padding-right: 10px;
     }
 
     .partners_list--item:nth-child(3n) {
         margin-bottom: 0px;
     }
 
+    .partners_list--item:before {
+        left: 136px;
+    }
+
     .partners__btn {
-        position: absolute;
-        top: 396px;
-        left: 50%;
-        transform: translateX(-50%);
         width: 194px;
         height: 40px;
         padding: 0;
