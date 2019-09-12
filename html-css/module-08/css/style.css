@@ -88,11 +88,12 @@ img {
     font-weight: 700;
     color: white;
     cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 20px;
 }
 
 .header-nav__btns--btn:hover {
     border: 2px solid white;
-    border-radius: 20px;
 }
 
 .header-info__title {
