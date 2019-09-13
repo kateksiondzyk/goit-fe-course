@@ -213,7 +213,6 @@ img {
 .icon-tv::before {
     background-color: rgb(255, 78, 80);
     background-image: url(../img/icons-small/tv.png);
-    z-index: 1;
 }
 
 .icon-bottle::before {
@@ -302,7 +301,7 @@ img {
 
 @media (max-width: 767px) {
 
-.partners__list [class*="col-"] {
+.partners__list [class*="col-"]:not(:last-child) {
     margin-bottom: 28px;
     }
 }
@@ -475,18 +474,10 @@ img {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 940px;
         margin-bottom: 36px;
     }
 
-    .partners_list--item {
-        width: 220px;
-        height: 250px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .partners_list--item:nth-child(3n) {
+    .partners__list [class*="col-"] {
         margin-bottom: 0px;
     }
 
