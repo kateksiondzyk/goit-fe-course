@@ -1,0 +1,70 @@
+link
+
+list
+
+page-header
+
+page-nav
+
+container 
+
+site-logo
+  site-logo__img
+
+site-navigation
+  site-navigation__item
+  site-navigation__link
+
+/*SECTION 1*/
+section
+  section__head
+  section__title
+  section__list
+
+services
+   services__title
+   services__list
+   services__item
+   services__icon
+     services__icon--alarm
+     services__icon--graph
+     services__icon--computer
+     services__icon--book
+     services__icon--home
+     services__icon--image
+ services__item--title
+ services__item--text
+
+ /*SECTION 2*/
+ team
+   team__title
+   team__description
+   team__list
+   team__item
+   team__card
+     team__card--img
+
+team-member
+   team-member__name
+   team-member__position
+
+card-overlay
+  card-overlay__list
+  card-overlay__item
+  card-overlay__link
+  card-overlay__icon
+    card-overlay__icon--facebook
+    card-overlay__icon--twitter
+    card-overlay__icon--pinterest
+    card-overlay__icon--instagram
+
+/*FOOTER*/
+
+footer
+  footer__text
+    footer__text--span
+  footer__form
+    footer__form--text
+    footer__form--btn
+
+  
