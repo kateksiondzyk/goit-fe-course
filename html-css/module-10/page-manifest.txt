@@ -15,6 +15,11 @@ site-navigation
   site-navigation__item
   site-navigation__link
 
+header-info
+  header-info__title
+  header-info__moto
+  header-info__button
+
 /*SECTION 1*/
 section
   section__head
@@ -52,11 +57,7 @@ card-overlay
   card-overlay__list
   card-overlay__item
   card-overlay__link
-  card-overlay__icon
-    card-overlay__icon--facebook
-    card-overlay__icon--twitter
-    card-overlay__icon--pinterest
-    card-overlay__icon--instagram
+  card-overlay__svg
 
 /*FOOTER*/
 
