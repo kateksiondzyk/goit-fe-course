@@ -263,7 +263,7 @@ img {
     background-image: url(../img/icons/image.png);
 }
 
-.services__item--title {
+.services__item-title {
     margin-bottom: 12px;
     font-size: 14px;
     font-family: "Roboto", "Cambria", "sans-serif";
@@ -272,7 +272,7 @@ img {
     text-align: left;
 }
 
-.services__item--text {
+.services__item-text {
     font-size: 15px;
     line-height: 24px;
     font-family: "Roboto", "Cambria", "sans-serif";
@@ -324,7 +324,7 @@ img {
     background-color: rgb(155, 214, 206);
 }
 
-.team__card--img {
+.team__card-img {
     width: 380px;
     height: 470px;
     margin-bottom: 28px;

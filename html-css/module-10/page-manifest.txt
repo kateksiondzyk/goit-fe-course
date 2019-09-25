@@ -37,8 +37,8 @@ services
      services__icon--book
      services__icon--home
      services__icon--image
- services__item--title
- services__item--text
+ services__item-title
+ services__item-text
 
  /*SECTION 2*/
  team
@@ -47,7 +47,7 @@ services
    team__list
    team__item
    team__card
-     team__card--img
+     team__card-img
 
 team-member
    team-member__name
