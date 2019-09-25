@@ -1,0 +1,36 @@
+.section-list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section__head {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    font-family: $secondary-font-title;
+    color: $main-color-black;
+}
+
+.section__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    font-family: $main-font-body;
+    color: $main-color-black;
+
+    &::after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 4px;
+        margin: 40px auto 0px;
+        background-color: $overlay-bg-color-red;
+    }
+
+}
+

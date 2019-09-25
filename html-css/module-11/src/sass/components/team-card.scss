@@ -1,0 +1,21 @@
+.team__card {
+    position: relative;
+    background-color: $secondary-color-card;
+
+    &:hover .team__card-img {
+        transform: translate(-10px, -10px);
+    }
+    
+    &:hover .card-overlay {
+        transform: translate(-10px, -10px);
+        opacity: 1;
+    }
+}
+
+.team__card-img {
+    width: 380px;
+    height: 470px;
+    margin-bottom: 28px;
+    transition: transform 200ms linear;
+}
+

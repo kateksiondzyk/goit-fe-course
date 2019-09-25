@@ -1,0 +1,32 @@
+.team {
+    padding-bottom: 78px;
+}
+
+.team__title {
+    margin-bottom: 88px;
+}
+
+.team__description {
+    display: inline-block;
+    width: 950px;
+    text-align: center;
+    margin: 0 125px 90px;
+    font-family: $main-font-body;
+    font-size: 15px;
+    line-height: 24px;
+    color: $secondary-color-grey;
+}
+
+.team__list {
+    @extend %list;
+    display: flex;
+    flex: 0 0 380px;
+    justify-content: space-between;
+}
+
+.team__item {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+.page-header {
+    min-height: 1000px;
+    background-image: 
+    linear-gradient(to bottom, $overlay-bg-color-red, $overlay-bg-color-yellow), url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    .page-header {
+        background-image: 
+        linear-gradient(to bottom, $overlay-bg-color-red, $overlay-bg-color-yellow), url(../images/banner@2x.jpg);
+    }
+}

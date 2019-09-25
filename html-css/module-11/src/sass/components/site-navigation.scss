@@ -1,0 +1,35 @@
+.site-navigation {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    width: 490px;
+    min-height: 30px;
+}
+
+.site-navigation__link {
+    @extend %link;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $main-font-title;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $main-color-white;
+    transition: color 200ms linear;
+
+    &:hover, &:focus {
+        color: $overlay-bg-color-yellow;
+    }
+
+    &::after {
+        display: none;
+        content: "";
+        height: 3px;
+        background-color: $overlay-bg-color-yellow;
+        transition: transform 200ms ease-in-out;
+    }
+
+    &:hover::after {
+        display: block;
+    }
+
+}

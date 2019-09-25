@@ -1,0 +1,51 @@
+.services__icon--alarm::before {
+    background-image: url(../images/features/alarm.png);
+}
+
+.services__icon--line_graph::before {
+    background-image: url(../images/features/line_graph.png);
+}
+
+.services__icon--computer::before {
+    background-image: url(../images/features/computer.png);
+}
+
+.services__icon--book::before {
+    background-image: url(../images/features/book.png);
+}
+
+.services__icon--home::before {
+    background-image: url(../images/features/home.png);
+}
+
+.services__icon--image::before {
+    background-image: url(../images/features/image.png);
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+
+    .services__icon--alarm::before {
+        background-image: url(../images/features/alarm@2x.png);
+    }
+    
+    .services__icon--line_graph::before {
+        background-image: url(../images/features/line_graph@2x.png);
+    }
+    
+    .services__icon--computer::before {
+        background-image: url(../images/features/computer@2x.png);
+    }
+    
+    .services__icon--book::before {
+        background-image: url(../images/features/book@2x.png);
+    }
+    
+    .services__icon--home::before {
+        background-image: url(../images/features/home@2x.png);
+    }
+    
+    .services__icon--image::before {
+        background-image: url(../images/features/image@2x.png);
+    }
+}

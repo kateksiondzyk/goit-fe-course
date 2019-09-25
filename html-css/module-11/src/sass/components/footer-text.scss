@@ -1,0 +1,10 @@
+.footer__text {
+    font-size: 14px;
+    font-family: $main-font-body;
+    color: $main-color-black;
+}
+
+.footer__text--span:hover,
+.footer__text--span:focus {
+    color: $overlay-bg-color-red;
+}

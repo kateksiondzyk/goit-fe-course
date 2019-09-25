@@ -1,0 +1,38 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './helpers/placeholders';
+@import './normalize';
+@import './base';
+
+/* Components */
+@import './components/container';
+
+/* Header */
+@import './components/page-header';
+@import './components/page-nav';
+@import './components/site-logo';
+@import './components/site-navigation';
+@import './components/header-info';
+
+/* Section */
+@import './components/section';
+
+/* Services */
+@import './components/services';
+@import './components/services__item';
+@import './components/services__icon';
+
+/* Team */
+@import './components/team';
+@import './components/team-card';
+@import './components/card-overlay';
+@import './components/team-member';
+
+/* Footer */
+@import './components/footer';
+@import './components/footer-text';
+@import './components/placeholder';
+@import './components/value';
+@import './components/footer-form';
