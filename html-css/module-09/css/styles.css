@@ -269,6 +269,22 @@ img {
     color: grey;
 }
 
+
+.partners__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 20px;
+}
+
+.partners__btn:hover {
+    border: 2px solid rgb(255, 78, 80);
+}
+
 /* montserrat-regular - latin */
 @font-face {
     font-family: 'Montserrat';
@@ -278,25 +294,13 @@ img {
         url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff') format('woff');
 }
 
-.partners__btn {
-    display: block;
-    width: 280px;
-    height: 40px;
-    margin: 0 auto;
-    padding: 12px 70px;
+.partners__btn-link {
     text-align: center;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat", "Cambria", "sans-serif";
     font-weight: 400;
     color: rgb(255, 78, 80);
-    cursor: pointer;
-    border: 2px solid transparent;
-    border-radius: 20px;
-}
-
-.partners__btn:hover {
-    border: 2px solid rgb(255, 78, 80);
 }
 
 @media (max-width: 767px) {
@@ -398,10 +402,8 @@ img {
     }
 
     .partners__btn {
-        width: 194px;
         height: 40px;
         padding: 0;
-        padding: 10px 28px;
     }
 }
 
@@ -485,9 +487,7 @@ img {
     }
 
     .partners__btn {
-        width: 194px;
         height: 40px;
         padding: 0;
-        padding: 10px 28px;
     }
 }
